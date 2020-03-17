@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:id="@+id/screen1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="500sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="85sp"
+            android:fontFamily="@font/dancing_script_bold"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="RENT AWAY"
+            android:textColor="#FFFFFF"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userid"
+            android:layout_width="250dp"
+            android:background="@drawable/edittext_resource"
+            android:layout_height="45sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="85sp"
+            android:hint="Email ID"
+            android:padding="10sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000000"
+            android:textColorHint="#61000000" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwordinput"
+            android:layout_width="250dp"
+            android:padding="10sp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_resource"
+            android:layout_height="45sp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000000"
+            android:textColorHint="#65000000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnlogin"
+            android:fontFamily="@font/artifika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="20dp"
+            android:background="@drawable/button_corners"
+            android:layout_margin="15dp"
+            android:text="@string/login" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="42sp"
+            android:gravity="center"
+            android:text="@string/txt1"
+            android:textColor="#000000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signupbtn"
+            android:fontFamily="@font/artifika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_corners"
+            android:text="@string/signup"
+            android:elevation="20dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

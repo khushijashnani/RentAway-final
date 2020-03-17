@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:id="@+id/title_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_alignBottom="@+id/linear_layout"
+            android:fontFamily="@font/artifika"
+            android:layout_marginRight="25sp"
+            android:text="CLEAR FAVOURITES"
+            android:textAlignment="center" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/text_3"
+        android:text="Do you want to clear favourites?"/>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/text_3"
+        android:layout_marginTop="23sp"
+        android:layout_marginBottom="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:id="@+id/btn2_cancel"
+        android:text="CANCEL"
+        android:fontFamily="@font/artifika"
+        />
+    <Button
+        android:id="@+id/ok"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/artifika"
+        android:text="YES"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

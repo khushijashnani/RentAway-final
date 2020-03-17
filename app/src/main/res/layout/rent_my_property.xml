@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/heading_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="80sp"
+        android:layout_marginBottom="5sp"
+        android:gravity="center"
+        android:paddingTop="10sp"
+        android:text="LOCATION DETAILS"
+        android:fontFamily="@font/artifika"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+
+
+    <TextView
+        android:id="@+id/apartment"
+        android:fontFamily="@font/artifika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading_location"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="50dp"
+        android:text="Apartment Name"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/apartment_input"
+
+        android:layout_width="300sp"
+        android:layout_height="45sp"
+        android:padding="10sp"
+        android:background="@drawable/edittext_resource"
+        android:layout_below="@+id/apartment"
+        android:layout_alignStart="@+id/location"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="InvalidId" />
+
+
+    <TextView
+        android:id="@+id/location"
+        android:fontFamily="@font/artifika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apartment"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="80dp"
+        android:text="Location"
+        android:textSize="18sp"
+        tools:ignore="UnknownId"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/location_input"
+
+        android:layout_width="300sp"
+        android:layout_height="45sp"
+        android:background="@drawable/edittext_resource"
+        android:padding="10sp"
+        android:layout_below="@+id/location"
+        android:layout_alignStart="@+id/location"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="InvalidId" />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:fontFamily="@font/artifika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_input"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="27dp"
+        android:text="Address"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        tools:ignore="UnknownId" />
+
+
+    <EditText
+        android:id="@+id/address_input"
+
+        android:background="@drawable/edittext_resource"
+        android:layout_width="300sp"
+        android:layout_height="45sp"
+        android:padding="10sp"
+        android:layout_below="@+id/address"
+        android:layout_alignStart="@+id/location"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="InvalidId" />
+
+
+    <Button
+        android:id="@+id/button_next1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="108dp"
+        android:text="Next"
+        android:fontFamily="@font/artifika"
+        android:background="@drawable/button_corners"/>
+
+
+
+</RelativeLayout>

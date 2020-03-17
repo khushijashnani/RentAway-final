@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/artifika"
+            android:layout_marginTop="20sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:id="@+id/aboutus"
+            android:textSize="20dp"
+            android:text="About Us"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:textSize="15sp"
+            android:padding="3dp"
+            android:id="@+id/us"
+            android:text="@string/terms"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background_gradient"
+    >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/heading_main"
+                android:fontFamily="@font/artifika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:gravity="center"
+                android:paddingTop="20sp"
+                android:layout_marginBottom="5sp"
+                android:text="Property Details"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sub_heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading_main"
+                android:layout_marginTop="15sp"
+                android:background="#70000000"
+                android:fontFamily="@font/artifika"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="No. of Bedrooms"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+
+            <ListView
+                android:id="@+id/list_view_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sub_heading1"
+                android:layout_marginTop="15sp"
+                android:choiceMode="singleChoice">
+            </ListView>
+
+            <TextView
+                android:id="@+id/sub_heading2"
+                android:fontFamily="@font/artifika"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list_view_1"
+                android:background="#70000000"
+                android:gravity="center"
+                android:layout_marginTop="15sp"
+                android:text="No. of Balconies"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+
+            <ListView
+                android:id="@+id/list_view_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sub_heading2"
+                android:layout_marginTop="15sp"
+                android:choiceMode="singleChoice">
+            </ListView>
+
+            <TextView
+                android:id="@+id/sub_heading3"
+                android:fontFamily="@font/artifika"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list_view_2"
+                android:layout_marginTop="15sp"
+                android:background="#70000000"
+                android:gravity="center"
+                android:text="Floor details"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/number_of_floors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_heading3"
+                android:layout_marginTop="25sp"
+                android:gravity="center"
+                android:text="Total number of floors:"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/artifika"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/floors_input"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="8sp"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_heading3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="7sp"
+                android:layout_marginBottom="5sp"
+                android:autofillHints=""
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/floor_no"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/artifika"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_heading3"
+                android:layout_marginTop="65sp"
+                android:gravity="center"
+                android:text="Floor Number:"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/floors_no_input"
+                android:textColor="#ffffff"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_heading3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="137dp"
+                android:layout_marginTop="50sp"
+                android:layout_marginBottom="15sp"
+                android:autofillHints=""
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+
+
+            <TextView
+                android:id="@+id/sub_heading5"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/artifika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floor_no"
+                android:layout_marginTop="20sp"
+                android:background="#70000000"
+                android:gravity="center"
+                android:text="Property Area"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sub_heading5"
+                android:layout_marginTop="15sp"
+                android:id="@+id/carpet_area"
+                android:text="Carpet Area: "
+                android:textSize="17sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/artifika"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+
+            <EditText
+                android:id="@+id/area"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/artifika"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/carpet_area"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="114dp"
+                android:layout_marginBottom="-7dp"
+                android:textSize="15sp" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/sub_heading4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carpet_area"
+                android:layout_marginTop="23sp"
+                android:background="#70000000"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/artifika"
+                android:gravity="center"
+                android:text="Furnishing"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+
+            <ListView
+                android:id="@+id/list_view_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sub_heading4"
+                android:layout_marginTop="15sp"
+                android:choiceMode="singleChoice">
+            </ListView>
+
+            <Button
+                android:id="@+id/button_next"
+                android:fontFamily="@font/artifika"
+                android:background="@drawable/button_corners"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list_view_3"
+                android:layout_marginTop="15sp"
+                android:text="Next"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10sp"/>
+
+
+        </RelativeLayout>
+
+</ScrollView>

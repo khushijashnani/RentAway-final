@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:id="@+id/image"
+        android:scaleType="centerCrop"
+        />
+
+    <Button
+        android:id="@+id/select_image"
+        android:layout_width="175sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:background="@drawable/button_corners"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:fontFamily="@font/artifika"
+        android:text="Select an Image" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/artifika"
+        android:textColor="#ffffff"
+        android:id="@+id/Price"
+        android:text="Expected Rent"
+        android:layout_below="@id/select_image"
+        android:textSize="20sp"
+        android:layout_marginTop="35sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        />
+
+    <EditText
+        android:layout_width="130sp"
+        android:height="30sp"
+        android:layout_marginTop="8sp"
+
+        android:layout_height="45sp"
+        android:padding="10sp"
+        android:id="@+id/rent_amount"
+        android:background="@drawable/edittext_resource"
+        android:layout_below="@id/Price"
+        android:layout_marginLeft="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/artifika"
+        android:textColor="#ffffff"
+        android:id="@+id/security"
+        android:text="Security Amount"
+        android:layout_below="@id/rent_amount"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        />
+
+
+    <EditText
+        android:layout_width="130sp"
+        android:height="30sp"
+        android:layout_marginTop="8sp"
+
+        android:padding="10sp"
+        android:layout_height="45sp"
+        android:background="@drawable/edittext_resource"
+        android:id="@+id/security_amount"
+        android:layout_below="@id/security"
+        android:layout_marginLeft="15sp"/>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/security_amount"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_corners"
+        android:layout_marginTop="40sp"
+        android:fontFamily="@font/artifika"
+        android:text="Finish" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
